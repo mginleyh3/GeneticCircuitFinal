@@ -1,6 +1,7 @@
+#you probably have to install these packages
 library(optimr)
-library(beeswarm)
 library(ggplot2)
+
 data <- read.csv("espndata.csv")
 data <- data[complete.cases(data),]
 param = c(k1=-.1,k2=-.1,k3=-.1,w12=-.1,w13=-.1,w23=-.1,wRNAP=-.1,w1r=-.1,w2r=-.1,w3r=-.1)
